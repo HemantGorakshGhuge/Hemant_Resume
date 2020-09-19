@@ -1,188 +1,151 @@
-\documentclass[a4paper, 10pt]{article}
+\documentclass[10pt,a4paper,times]{moderncv} 
+\moderncvstyle{banking}
 
-\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc} 
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage{import}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tfrupee}
+
+% Redefinition, symbol included in link:
+\let\orighref\href
+\renewcommand{\hrefer}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+\thispagestyle{empty} 
 
 \begin{document}
+\centerline{\Large{\textbf{Hemant Ghuge}}}
+
 \begin{center}
-\begin{tabular}{ p{10cm} p{10cm} }
-& +91 91 4594 6493 \\ 
-{\textbf{\LARGE{Hemant Goraksh Ghuge}}} &\href{mailto:hemantgghuge@gmail.com}{hemantgghuge@gmail.com} \\ 
-&\url{in.linkedin.com/in/hemant-ghuge} \\ &\url{hemantghuge.wordpress.com} \\ 
-&\url{github.com/HemantGorakshGhuge}
-\end{tabular}
-\end{center}
-\vspace{-0.7cm}
-\begin{center}
-\line(1,0){500}
+    \faLinkedin\hspace{0.2cm}\href{https://www.linkedin.com/in/hemantghuge/}{linkedin.com/in/hemantghuge}
+    \hspace{0.2cm}
+    \faGithub\hspace{0.2cm}\href{https://github.com/hemantghuge}{github.com/hemantghuge}
+    \hspace{0.2cm}
+    \faGoogle\hspace{0.2cm}\href{mailto:hemantgghuge@gmail.com}{hemantgghuge@gmail.com}
+    \line(1,0){520}
 \end{center}
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=5cm, angle=0]{ResumePhoto.jpg}
-%\end{figure}
+{\textbf{\large{EDUCATION:}}}\\
 
-{\textbf{\Large{OBJECTIVE:}}}\\
-
-To pursue a challenging career and be part of a progressive organisation that presents scope to enhance my knowledge, creativity utilizing my skill toward the development of the organization.\\
-
-{\textbf{\Large{EDUCATION:}}}\\
-
-\vspace{-0.7cm}
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\textbf{EXAM} & \textbf{COLLEGE/SCHOOL} & \textbf{BOARD} & \textbf{YEAR} & \textbf{AGGREGATE}\\ \hline 
-B.E ENTC & Government College of Engineering and Research &  S.P.P.U & 2020 & 7.67 (Till 7th Sem)\\ \hline
-H.S.C & Army Public School, Mumbai & C.B.S.E & 2016 & 82.8\\ \hline
-S.S.C & Army Public School, Mumbai & C.B.S.E & 2014 & 8.8\\ \hline
-\end{tabular}
-\end{center}
-
-{\textbf{\Large{PROJECTS:}}}
 \begin{itemize}
-\item {\textbf{\large{Smart and Efficient Techniques for Automated Guided Vehicle}}}
 
-Presently our BE project team is working on AGV (Automated Guided Vehicle) which is \textbf{Tri-Wheel Omni} based vehicle$.$ A self-developed \textbf{PCB} is used instead of complex circuitry and the AGV is controlled with a \textbf{custom GUI} developed by the team for task planning$.$ %\textbf{Self-Charging} and \textbf{Power Management} are one of the key feature of our project$.$ 
+    \item{\cventry{Aug 2016 -- Present}{Bachelor of Engineering in Electronics and Telecommunication, CGPA - 7.67 (Till 7th Semester) }{\hrefer{https://www.gcoeara.ac.in/}{Government College of Engineering and Research}}{Avasari(Khurd), Pune}{}{\vspace{3pt}}}
 
-\item {\textbf{\large{MathWorks MiniDrone Competition}}}
-
-Designed a line follower and \textbf{angle estimation algorithm} for a Mini-Drone using Control System and Computer Vision Toolbox. It includes \textbf{Model-Based Design} using Simulink. We have \textbf{secured 5th} among the shortlisted teams from across India, at the National Finals of the MathWorks Minidrone competition held at NUMA Bengaluru.
-
-\item {\textbf{\large{National DD Robocon 2019}}}
-
-Designed and built a Four Mecanum Wheeled Omnidirectional Mobile Robot and a Quadruped Robot (Automatic) using 8 BLDC motors for the competition$.$ We used Image processing for the navigation of Quadruped Robot$.$ The team secured \textbf{AIR 4th} and won \textbf{Special Jury Award}.
-
-\item {\textbf{\large{Fire Rescue System (FRS) for High-Rise Building}}}
-
-FRS is a secondary evacuation system used during fire accidents$.$ With this project, our team was selected as one of the \textbf{21 finalists out of 362 teams} in eYantra Ideas Competition held at IIT Bombay and demonstrated our project at National Finals and Symposium 2019.
-
-%\item {\textbf{\large{In-House Mechatronics Kit(33 in 1)}}}
-
-%The kit is a custom PCB which covers \textbf{33 experiments} of SPPU syllabus of \textbf{4 branches}. It comes under college development projects.
-
-\item {\textbf{\large{National Robotic Contest Robocon 2018}}}
-
-Designed and built Tri-Omni Wheeled Omnidirectional Mobile Robot and four Mecanum Wheeled Omnidirectional Mobile Robot$.$ Rack picking and Shuttlecock throwing mechanism were also designed and implemented$.$ The 2nd fastest team to complete the task$.$ \\
-\textbf{AIR 2nd (League Matches)} and won \textbf{Smart and Simple Robot Award} by Robu.in with a cash prize worth 50k.
-
-\item {\textbf{\large{ServoEyePi}}}
-
-\textbf{Raspberry Pi} based Computer Vision project using servo motor and pi cam with \textbf{MATLAB} programming$.$ The project was awarded as \textbf{Innovative Project} in Robo-X event - Abinitio 2018-19 (Technical Event)
-%\item {\textbf{\large{UltraLine03}}}
-
-%Arduino based obstacle avoidance and line following robot which travelled automatic zone of \textbf{ABU ROBOCON 2018} theme.
-%\item {\textbf{\large{AlexaPiBhima}}}
-
-%Raspberry Pi running amazon's "Alexa voice services"$.$ \textbf{Python} and \textbf{Bash Scripting} were used in this project.\\
+\vspace{0.2cm}
 
 \end{itemize}
 
-{\textbf{\Large{TECHNICAL SKILLS:}}}
-%\begin{itemize}
-%\item MATLAB
-%\item Simulink
-%\item C \& Python
-%\item Raspberry Pi
-%\item Arduino
-%\item IoT
-%\item Bash Script
-%\item Ubuntu
-%\item Vim Text Editor
-%\item Computer Vision
-%\item Deep Learning \\
-%\end{itemize}
-\\
-\begin{tabular}{p{1cm}p{3.5cm}p{3.5cm}p{3.5cm}p{3.5cm}}
-\\
-& Python & C & MATLAB & Simulink\\
-& Raspberry Pi & Arduino & Machine Learning & Deep Learning\\
-& Computer Vision & Ubuntu & Vim Text Editor & Shell Scripting\\
-\\
-\end{tabular}
-\newpage
-{\textbf{\Large{EXTRA-CURRICULAR ACTIVITIES:}}}
+{\textbf{\large{INTERNSHIPS:}}}\\
+
 \begin{itemize}
-\item \textbf{Senior Team Member at Robotics Research Lab, GCOEARA}
 
-Participated in National Robotic Contest DD-Robocon 2019 and secured AIR 4 along with Special Jury Award$.$ Our team was AIR 2nd (League Table) in National Robotic Contest Robocon 2018$.$ We explore new things for the lab and endeavour to execute in the Lab.
-
-\item \textbf{Senior Member at eLSI'19}
-
-We the senior members of eLSI lab work for developing technical skills among other members.
-\item \textbf{State Level Football Goalkeeper and Athlete}
-
-Presently I am goal-keeper of Junnar Taluka Football Club (JTFC)$.$ Our team awarded as 2nd Runner-up in 7 a side football championship trophy 2018$.$ Participated 3 times in CBSE Cluster Football as well as Athletic Meet$.$ I was the Sports Captain of Army Public School, Mumbai. 
-%\item \textbf{Typing Speed 35wpm}
-
-%I have too craze in keyboard typing$.$ This craziness made me the winner of typing event at GPA.
-\item \textbf{Rubik's Cube Solver}
-
-Solving Rubik's Cube is one of my hobbies$.$ This hobby helped me in securing 2nd place in Rubik's Cube event at GPA. Best Time:- 53 sec\\
+    \item{\cventry{Aug 2020 -- Present}{Computer Vision Intern}{\hrefer{https://www.tarsyer.com/}{Tarsyer}}{Koregaon Park, Pune}{}{\vspace{3pt}}}
+    
+    \vspace{-0.2cm}
+    
+    \begin{itemize}
+        \item Achieved accuracy \textbf{99\%} by creating TFLite Model with collaboration - 10 error in 1000 objects
+        \item Detection, Tracking, Counting, Deployment as per \textbf{customer requirement}.
+        \item \textbf{Technologies Used:-} TensorFlow, TFLite, OpenCV, Deep Learning, Raspberry Pi, Flask\\
+    \end{itemize}
+    
+\vspace{0.2cm}
 
 \end{itemize}
 
-{\textbf{\Large{CO-CURRICULAR ACTIVITIES:}}}
+{\textbf{\large{PROJECTS:}}}\\
+
 \begin{itemize}
-\item \textbf{SAAGA 2K18}
+    
+    \item{\cventry{Jul 2020 -- Aug 2020}{Summer Research Trainee}{Wall-Climbing Robot with Dual-Manipulator for Cleaning and Painting for a Concrete Surface}{\href{http://www.neist.res.in/srtp2020/index.php}{CSIR-CBRI}}{\textbf{\href{https://scholar.google.com/citations?user=NdEmHUAAAAAJ&hl=en}{Guide: Er. Ravindra Singh Bisht}}}{\vspace{3pt}}}
+    
+    \vspace{-0.2cm}
+    
+    \begin{itemize}
+        \item Designed and developed control strategies for a wall-climbing robot having dual-arm.
+        \item \textbf{Technologies Used:-} Proteus, SolidWorks, Arduino\\
+    \end{itemize}
 
-Member of Student Alumni Association of GCOEARA.
-\item \textbf{Workshop}
+\vspace{0.2cm}
 
-Conducted and organized many workshops in college on MATLAB, and Raspberry Pi. Each time we received a great response from students.
-\item \textbf{Abinito (Technical Event)}
+    \item{\cventry{Jul 2019 -- Jun 2020}{Team Representative, Computer Vision, Robotics}{\hrefer{https://www.youtube.com/watch?v=_118klFem0o&t=2s}{\textit{[UG PROJECT]} Smart and Efficient Techniques for Automated Guided Vehicle}}{Avasari(Khurd), Pune}{\textbf{\href{https://scholar.google.com/citations?user=NdEmHUAAAAAJ&hl=en}{Guide: Dr. Kirti Vasant Thakur}}}{\vspace{3pt}}}
+    
+    \vspace{-0.2cm}
+    
+    \begin{itemize}
+        \item \textbf{3rd} in ABHIKALP 2020 \& \textbf{Top 4\%} (49 out of 1346 teams) in e-Yantra Ideas Competition 2020.
+        \item Computer Vision, Control System, Path Planning for performing various \textbf{Industrial-Based Task}.
+        \item \textbf{Technologies Used:-} Python, OpenCV, TensorFlow, Raspberry Pi, Arduino\\
+    \end{itemize}
 
-Department Head - Abinitio 2018-19.\\
-Sub-Coordinator of Line Tracing Event - Abinitio 2017-18.\\ 
-%\item \textbf{Resonance (Cultural Event)} 
+\vspace{0.2cm}
 
-%Branch Theme Winner - Resonance 2017. \\
-%Street-play event Winner - Resonance 2017.\\
-%\item \textbf{Combat (Sports Event)}
+    \item{\cventry{Jul 2019 -- Oct 2019}{Team Captain}{\hrefer{https://in.mathworks.com/academia/student-competitions/minidrones.html}{MathWorks MiniDrone Competition, 2019}}{NUMA, Bangalore}{Image Processing, Control System}{\vspace{3pt}}}
+    
+    \vspace{-0.2cm}
+    
+    \begin{itemize}
+        \item \textbf{Ranked 5th} in the final round. Amazing \textbf{mentorship} from the \textbf{Technical Evangelist} of MathWorks.
+        \item Designed a line follower and \textbf{angle estimation algorithm} for a Mini-Drone. It includes Model-Based-Design.
+        \item \textbf{Technologies Used:-} MATLAB, Simulink, Computer Vision and Control System Toolbox\\
+    \end{itemize}
 
-%Football Competition Winner - Combat 2017. \\
+\vspace{0.2cm}
+
+    \item{\cventry{Sep 2018 -- Apr 2019}{Team Representative}{ \hrefer{https://www.youtube.com/watch?v=8FT0MLcASMA}{Fire Rescue System (FRS) for High-Rise Building}}{IIT, Bombay}{Inventor, Robotics}{\vspace{3pt}}}
+    
+    \vspace{-0.2cm}
+    
+    \begin{itemize}
+        \item Finished in \textbf{Top 2\%} (21 out of 1000+ teams) in e-Yantra Ideas Competition 2019.
+        \item \textbf{\rupee 5000} as cash prize and special pass to e-Yantra National Symposium 2019.
+        \item Developed a secondary evacuation system. Appended speed-varing feature for the operator/rescuer.\\
+    \end{itemize}
+    
+\vspace{0.2cm}
+
+    \item{\cventry{Team of 40 students}{Senior Team Member}{ \hrefer{https://en.wikipedia.org/wiki/Robocon_India}{National DD Robocon India}}{}{\href{https://rrlgcoeara.in/}{Robotics Research Lab}}{\vspace{3pt}}}
+    
+    \begin{center}
+        \begin{tabular}{ p{70}  p{180}   p{80}   p{80}   p{90}  }
+        \hline
+        \textbf{Edition} & \textbf{Award} & \textbf{Rank} & \textbf{Venue} & \textbf{Timeline}\\ [0.3ex] \hline
+        \hrefer{https://www.youtube.com/watch?v=-J3ZOYKO1EA}{18$^{th}$ } & Judges Special Award  & 4$^{th}$ & IIT, Delhi & Sep 2018 -- Jun 2019 \\ 
+        \hrefer{https://www.youtube.com/watch?v=6Fx7XCBI0dA}{17$^{th}$ } & Smart and Simple Robot Award & 2$^{nd}$(League) &  Balewadi, Pune & Sep 2017 -- Mar 2018 \\
+        \end{tabular}
+    \end{center}
+    
+    \vspace{0.2cm}
+    
+    \begin{itemize}
+        \item In every edition, we built \textbf{two 20kg}(apx.) \textbf{Manipulator} based \textbf{Mobile Robot} for performing multiple tasks. 
+        \item Tasks such as navigation, obstacle avoidance, picking, throwing, transferring etc. were executed.\\ 
+    \end{itemize}
+    
+\vspace{0.2cm}
+
 \end{itemize}
 
-{\textbf{\Large{TRAINING \& INTERNSHIP:}}}
+{\textbf{\large{RESEARCH PUBLICATION:}}}\\
+
+\vspace{-0.2cm}
+
 \begin{itemize}
-%\item I am \textbf{MATLAB Developer Intern} at MATLAB Helper. 4-month internship ending at Dec 19.
-\item MATLAB, Simulink and Deep Learning Onramp training course by MathWorks
-\item Drone Making Workshop organised by MindSpark Team (C.O.E.P)
-\item First Aid and Life Saving Course conducted under the aegis of Headquarters Southern Command (Medical)\\
+
+    \item \textbf{Hemant Ghuge}, Revati Kulkarni, et$.$ al.\hrefer{https://ieeexplore.ieee.org/document/9128377}{\textit{"Fire Rescue System for High Rise Building"}}, \textbf{5th IEEE International Conference On Computing, Communication, Control And Automation (ICCUBEA)}, 19-21 Sept. 2019. \textbf{Best Paper}(In Session)
+    
+    \vspace{0.2cm}
+    
+    \item Unnati Kulkarni, \textbf{Hemant Ghuge}, et$.$ al.\hrefer{https://www.springer.com/gp/book/9789811583902}{\textit{"An Algorithm for Skew Angle Estimation and it’s Application Domain"}}. In: Merchant et$.$ al., (eds) \textbf{Advances in Signal and Data Processing}. Select Proceedings of ICSDP 2019, 15-16 Nov. 2019, \textit{Lecture Notes in Electrical Engineering}, vol. 703. \textbf{Springer, Singapore}
+    
+    \vspace{0.2cm}
+    
+    \item Tejas Chaudhari, \textbf{Hemant Ghuge} et$.$ al.\hrefer{https://ieeexplore.ieee.org/document/9105783}{\textit{"Design and Control of Quadruped Robot along with Machine Vision based Path Planning"}}, \textbf{IEEE Pune Section International Conference (PuneCon)}, 18-20 Dec. 2019
+
 \end{itemize}
 
-{\textbf{\Large{RESEARCH PUBLICATION:}}}
-\begin{itemize}
-\item A research paper on ``Fire Rescue System for High Rise Building" is presented in \textbf{5th IEEE International Conference On Computing, Communication, Control And Automation(ICCUBEA) 2019}. We won \textbf{Best Paper Award}. Soon, it will be published in IEEE Xplore.
-\item A research paper on ``An Algorithm for Skew Angle Estimation and it's Application Domain" is presented in \textbf{International Conference on Signal \& Data Processing - ICSDP 2019} on 15th - 16th  November, 2019. All presented papers will be published in the prestigious Lecture Notes in Electrical Engineering (\textbf{Springer}).
-\item A research paper on ``Design and Control of Quadruped Robot along with Machine Vision based Path Planning." is accepted for the oral presentation in \textbf{IEEE PuneCon} on 18th-20th December, 2019. All accepted paper will be submitted to IEEE Xplore.\\
-\end{itemize}
-
-{\textbf{\Large{PERSONAL DETAILS:}}}\\
-
-\begin{tabular}{ p{3cm} p{6cm} p{3cm} p{6cm} }
-Father's Name: & Hav$.$ Goraksh Karbhari Ghuge(Retd.) & Mother's Name: & Aruna Goraksh Ghuge \\ 
-Sex: & Male & Date of Birth: & January 30, 1999\\     
-Nationality: & Indian &Marital Status: & Single \\ 
-\\
-\end{tabular}
-%{\textbf{\Large{REFERENCES}}}\\
-
-%\begin{tabular}{ p{5cm} p{5.5cm} p{5.5cm} }
-%Dr$.$ Veer Alakshendra & Dr$.$ Avinash Pant (Principal) & Dr$.$ Manoj Nagmode\\ 
-%Technical Evangelist & Govt$.$ College of Engg$.$ \& Research & Head, Department of E\&TC \\      
-%MathWorks & Former Vice Chairman at A.I.C.T.E & Govt$.$ College of Engg$.$ \& Research \\      
-%8446985971 & 9958411661 & 9226771488 \\ 
-%Veer.Alakshendra@mathworks.in & pantavinash@hotmail.com & manoj.nagmode@gmail.com \\
-%\\
-%\end{tabular}
-
-{\textbf{\Large{DECLARATION}}}\\
-
-\centerline{I hereby declare that the above-written particulars are true to the best of my knowledge and belief.}
-
-%\vspace{0.4cm}
-%{\textbf{\Large{DATE}}}\\
-%\today
 \end{document}
